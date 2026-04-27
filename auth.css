@@ -1,0 +1,147 @@
+/* auth.css — styling untuk halaman login & register */
+
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F7F4EF;
+  padding: 24px 16px;
+}
+
+.auth-card {
+  background: #FDFBF8;
+  border: 1.5px solid #E4E0D8;
+  border-radius: 20px;
+  padding: 40px 36px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 8px 32px rgba(28,28,26,.08);
+}
+
+.auth-logo {
+  width: 48px;
+  height: 48px;
+  background: #A34E22;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.auth-logo svg {
+  width: 26px;
+  height: 26px;
+  stroke: #fff;
+  fill: none;
+  stroke-width: 2;
+}
+
+.auth-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 26px;
+  color: #1C1C1A;
+  margin-bottom: 4px;
+}
+
+.auth-subtitle {
+  font-size: 13px;
+  color: #767370;
+  margin-bottom: 24px;
+}
+
+.auth-form .form-group {
+  margin-bottom: 16px;
+}
+
+.auth-form label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: #1C1C1A;
+  margin-bottom: 6px;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1.5px solid #E4E0D8;
+  border-radius: 9px;
+  font-size: 14px;
+  font-family: inherit;
+  background: #fff;
+  color: #1C1C1A;
+  outline: none;
+  transition: border-color .15s;
+  box-sizing: border-box;
+}
+
+.auth-form input:focus {
+  border-color: #A34E22;
+}
+
+.auth-error {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+  border-radius: 9px;
+  padding: 11px 14px;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+.auth-success {
+  background: #D1FAE5;
+  color: #065F46;
+  border: 1px solid #A7F3D0;
+  border-radius: 9px;
+  padding: 11px 14px;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  background: #1C1C1A;
+  color: #fff;
+  border: none;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background .15s;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background: #2E2E2B;
+}
+
+.full-btn {
+  width: 100%;
+}
+
+.auth-footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: #767370;
+  line-height: 1.9;
+}
+
+.auth-footer a {
+  color: #A34E22;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
