@@ -405,7 +405,7 @@ function openDetail(id) {
         '<ul class="detail-list">' +
           '<li>Cocok untuk rumah, kos, atau usaha kecil.</li>' +
           '<li>Detail ukuran & warna mengikuti stok di toko.</li>' +
-          '<li>Pemesanan dan cek stok bisa melalui WhatsApp / Instagram.</li>' +
+          '<li>Pemesanan dan cek stok bisa melalui Instagram.</li>' +
         '</ul>' +
         '<div class="detail-actions" style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;">' +
           '<div class="qty" data-detail-qty="' + p.id + '">' +

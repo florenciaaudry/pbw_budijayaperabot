@@ -38,13 +38,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
 <div class="auth-container">
   <div class="auth-card">
-    <div class="auth-logo">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M3 12l9-8 9 8v8a2 2 0 0 1-2 2h-4v-6H9v6H5a2 2 0 0 1-2-2v-8z"/>
-      </svg>
+
+    <div class="auth-logo-wrap">
+      <img src="gambar/logobudijaya.png" alt="Perabot Budi Jaya" class="auth-logo-img">
     </div>
+
     <h2 class="auth-title">Buat Akun Baru</h2>
-    <p class="auth-subtitle">Gratis, mudah, dan aman.</p>
+    <p class="auth-subtitle">Masuk untuk melanjutkan ke akunmu.</p>
 
     <?php if ($error): ?>
       <div class="auth-error"><?= htmlspecialchars($error) ?></div>
@@ -70,15 +70,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <div class="form-group">
         <label>Password</label>
         <input type="password" name="password" required autocomplete="new-password">
-        <small style="opacity:.65">Minimal 6 karakter.</small>
+        <small style="display:block;margin-top:5px;font-size:12px;color:#767370;">Minimal 6 karakter.</small>
       </div>
       <button type="submit" class="btn-primary full-btn">Daftar Sekarang</button>
     </form>
 
     <div class="auth-footer">
-      Sudah punya akun? <a href="login_customer.php">Login</a><br>
+      Sudah punya akun? <a href="login_customer.php">Login</a>
+      <div class="auth-divider"></div>
       <a href="index.php">← Kembali ke toko</a>
     </div>
+
   </div>
 </div>
 </body>

@@ -146,7 +146,7 @@ var checkoutModalHTML = `
       <input id="co-name" type="text" placeholder="Nama penerima" class="bjf-input">
     </div>
     <div class="bjf-form-group">
-      <label class="bjf-form-label">No. Telepon / WhatsApp *</label>
+      <label class="bjf-form-label">No. Telepon *</label>
       <input id="co-phone" type="tel" placeholder="08xx-xxxx-xxxx" class="bjf-input">
     </div>
     <div class="bjf-form-group">

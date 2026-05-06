@@ -1,58 +1,61 @@
-/* auth.css — styling untuk halaman login & register */
+/* auth.css — halaman login, register, admin */
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
 .auth-container {
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #F7F4EF;
-  padding: 24px 16px;
+  background: #F2EEE8;
+  padding: 32px 16px;
 }
 
 .auth-card {
   background: #FDFBF8;
   border: 1.5px solid #E4E0D8;
-  border-radius: 20px;
-  padding: 40px 36px;
+  border-radius: 24px;
+  padding: 48px 44px 40px;
   width: 100%;
-  max-width: 400px;
-  box-shadow: 0 8px 32px rgba(28,28,26,.08);
+  max-width: 420px;
+  box-shadow: 0 12px 40px rgba(28,28,26,.10), 0 2px 8px rgba(28,28,26,.06);
 }
 
-.auth-logo {
-  width: 48px;
-  height: 48px;
-  background: #A34E22;
-  border-radius: 12px;
+/* Logo */
+.auth-logo-wrap {
   display: flex;
-  align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
 }
 
-.auth-logo svg {
-  width: 26px;
-  height: 26px;
-  stroke: #fff;
-  fill: none;
-  stroke-width: 2;
+.auth-logo-img {
+  height: 120px;
+  width: auto;
+  max-width: 220px;
+  object-fit: contain;
+  display: block;
 }
 
+/*  Heading  */
 .auth-title {
   font-family: 'DM Serif Display', serif;
-  font-size: 26px;
+  font-size: 28px;
+  font-weight: 400;
   color: #1C1C1A;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
+  line-height: 1.2;
 }
 
 .auth-subtitle {
-  font-size: 13px;
+  font-size: 14px;
   color: #767370;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
+  line-height: 1.5;
 }
 
+/* Form */
 .auth-form .form-group {
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 .auth-form label {
@@ -62,78 +65,79 @@
   letter-spacing: .08em;
   text-transform: uppercase;
   color: #1C1C1A;
-  margin-bottom: 6px;
+  margin-bottom: 7px;
 }
 
 .auth-form input {
   width: 100%;
-  padding: 11px 14px;
+  padding: 12px 15px;
   border: 1.5px solid #E4E0D8;
-  border-radius: 9px;
+  border-radius: 10px;
   font-size: 14px;
   font-family: inherit;
   background: #fff;
   color: #1C1C1A;
   outline: none;
-  transition: border-color .15s;
-  box-sizing: border-box;
+  transition: border-color .15s, box-shadow .15s;
 }
 
 .auth-form input:focus {
   border-color: #A34E22;
+  box-shadow: 0 0 0 3px rgba(163,78,34,.10);
 }
 
+/*  Alerts */
 .auth-error {
   background: #fee2e2;
   color: #991b1b;
   border: 1px solid #fecaca;
-  border-radius: 9px;
-  padding: 11px 14px;
+  border-radius: 10px;
+  padding: 12px 15px;
   font-size: 13px;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 .auth-success {
   background: #D1FAE5;
   color: #065F46;
   border: 1px solid #A7F3D0;
-  border-radius: 9px;
-  padding: 11px 14px;
+  border-radius: 10px;
+  padding: 12px 15px;
   font-size: 13px;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
+/*  Buttons  */
 .btn-primary {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 12px 20px;
+  padding: 13px 20px;
   background: #1C1C1A;
   color: #fff;
   border: none;
-  border-radius: 9px;
+  border-radius: 10px;
   font-size: 14px;
   font-weight: 700;
   cursor: pointer;
   font-family: inherit;
-  transition: background .15s;
+  transition: background .15s, transform .1s;
   text-decoration: none;
+  letter-spacing: .01em;
 }
 
-.btn-primary:hover {
-  background: #2E2E2B;
-}
+.btn-primary:hover { background: #2E2E2B; }
+.btn-primary:active { transform: scale(.98); }
 
-.full-btn {
-  width: 100%;
-}
+.full-btn { width: 100%; margin-top: 4px; }
 
+/* Footer links  */
 .auth-footer {
-  margin-top: 20px;
+  margin-top: 24px;
   text-align: center;
   font-size: 13px;
   color: #767370;
-  line-height: 1.9;
+  line-height: 2;
 }
 
 .auth-footer a {
@@ -142,6 +146,17 @@
   text-decoration: none;
 }
 
-.auth-footer a:hover {
-  text-decoration: underline;
+.auth-footer a:hover { text-decoration: underline; }
+
+.auth-divider {
+  height: 1px;
+  background: #E4E0D8;
+  margin: 14px 0 10px;
+}
+
+/*  Responsive */
+@media (max-width: 480px) {
+  .auth-card { padding: 36px 24px 32px; border-radius: 18px; }
+  .auth-logo-img { height: 60px; }
+  .auth-title { font-size: 24px; }
 }

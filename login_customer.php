@@ -9,7 +9,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email    = trim($_POST['email'] ?? '');
     $password = $_POST['password'] ?? '';
 
-    // Cek rate limit
     $key     = 'cust_' . md5(strtolower($email));
     $locked  = login_locked_seconds($key);
     if ($locked > 0) {
@@ -46,13 +45,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
 <div class="auth-container">
   <div class="auth-card">
-    <div class="auth-logo">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M3 12l9-8 9 8v8a2 2 0 0 1-2 2h-4v-6H9v6H5a2 2 0 0 1-2-2v-8z"/>
-      </svg>
+
+    <div class="auth-logo-wrap">
+      <img src="gambar/logobudijaya.png" alt="Perabot Budi Jaya" class="auth-logo-img">
     </div>
-    <h2 class="auth-title">Masuk ke Akunmu</h2>
-    <p class="auth-subtitle">Belanja lebih mudah dengan akun Budi Jaya.</p>
+
+    <h2 class="auth-title">Welcome Back</h2>
+    <p class="auth-subtitle">Masuk untuk melanjutkan ke akunmu.</p>
 
     <?php if ($error): ?>
       <div class="auth-error"><?= htmlspecialchars($error) ?></div>
@@ -73,13 +72,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </form>
 
     <div class="auth-footer">
-      Belum punya akun? <a href="register.php">Daftar sekarang</a><br>
-      <div style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #E4E0D8; font-size: 11px;">
-        <a href="index.php">← Kembali ke toko</a>
-        <span style="margin: 0 8px; color: #E4E0D8;">|</span>
-        <a href="admin_login.php" style="color: var(--muted); font-weight: normal;">Masuk sebagai Admin?</a>
-      </div>
+      Belum punya akun? <a href="register.php">Daftar sekarang</a>
+      <div class="auth-divider"></div>
+      <a href="index.php">← Kembali ke toko</a>
+      <span style="margin: 0 10px; color: #E4E0D8;">|</span>
+      <a href="admin_login.php" style="color: #767370; font-weight: 500;">Masuk sebagai Admin</a>
     </div>
+
   </div>
 </div>
 </body>

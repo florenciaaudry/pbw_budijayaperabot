@@ -17,13 +17,7 @@
 <header class="site-header">
   <div class="container nav">
     <a class="brand" href="#home" aria-label="Beranda">
-      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M3 12l9-8 9 8v8a2 2 0 0 1-2 2h-4v-6H9v6H5a2 2 0 0 1-2-2v-8z"/>
-      </svg>
-      <div class="brand-text">
-        <span class="brand-title">Perabot Budi Jaya</span>
-        <span class="brand-sub">Marelan, Medan</span>
-      </div>
+      <img src="gambar/logobudijaya.png" alt="Perabot Budi Jaya" class="brand-logo">
     </a>
 
     <?php include 'navbar.php'; ?>

@@ -46,14 +46,14 @@
 
           <div class="hero-product-overlay">
             <div class="hero-product-text">
-              <p class="hero-product-tag">Koleksi kursi plastik</p>
-              <h2 class="hero-product-name">Kursi plastik harian</h2>
-              <p class="hero-product-sub">Cocok untuk ruang makan, teras, acara keluarga, dan usaha kecil.</p>
+              <p class="hero-product-tag">Koleksi Sofa</p>
+              <h2 class="hero-product-name">Sofa L Minimalis</h2>
+              <p class="hero-product-sub">Sofa sudut minimalis, nyaman untuk ruang keluarga.</p>
             </div>
 
             <div class="hero-product-price">
               <span>Mulai</span>
-              <strong>Rp90.000</strong>
+              <strong>Rp1.999.000</strong>
             </div>
           </div>
         </article>
@@ -132,17 +132,11 @@
 
       <div class="produk-toolbar">
         <div class="search" role="search">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-            <path
-              d="M10 4a6 6 0 1 1 0 12 6 6 6 0 0 1 0-12zm8.7 13.3-3-3"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
+          <svg class="icon search-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="7"/>
+            <line x1="16.5" y1="16.5" x2="22" y2="22"/>
           </svg>
-          <input id="q" type="search" placeholder="Cari kursi, lemari, rak..." aria-label="Cari produk">
+          <input id="q" type="search" placeholder="Cari sofa, lemari, meja..." aria-label="Cari produk">
         </div>
 
         <div class="toolbar-right">
@@ -241,7 +235,7 @@
           <ol>
             <li>Pilih produk, tambahkan ke keranjang.</li>
             <li>Klik <strong>Checkout →</strong>, isi nama & alamat.</li>
-            <li>Pilih metode bayar: <strong>QRIS</strong> atau <strong>WhatsApp</strong>.</li>
+            <li>Pilih metode bayar: <strong>QRIS</strong>.</li>
             <li>Upload bukti transfer, admin konfirmasi dalam 1×24 jam.</li>
           </ol>
         </div>
