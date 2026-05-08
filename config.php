@@ -7,15 +7,15 @@
 // ============================================================
 
 // Database
-define('DB_HOST',    'sql112.infinityfree.com');
-define('DB_NAME',    'if0_41760043_budijaya');
-define('DB_USER',    'if0_41760043');        // Ganti dengan user MySQL hosting kamu
-define('DB_PASS',    'budijaya2026');            // Ganti dengan password MySQL kamu
+define('DB_HOST', 'localhost');
+define('DB_NAME', 'budijaya_furniture');  
+define('DB_USER', 'root');
+define('DB_PASS', '');  // 
 define('DB_CHARSET', 'utf8mb4');
 
 // Aplikasi
 define('APP_NAME',   'Budi Jaya Furniture');
-define('WA_ADMIN',   '6285260835353');  // Nomor WA admin (format internasional)
+define('WA_ADMIN',   '6285260835353');  
 
 // Keamanan
-define('CSRF_SECRET', 'ganti_dengan_string_acak_panjang_minimal_32_karakter');
+define('CSRF_SECRET', 'BudiJaya$Xk92mNpQ7vLw3rT8uZ5aE1cF6hY4j');
